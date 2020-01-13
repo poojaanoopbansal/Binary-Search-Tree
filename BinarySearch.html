@@ -1,0 +1,37 @@
+<head>
+        <script src="models/BinaryNode.js" type="text/javascript"></script> 
+        <script src="main/binary-search-tree.js" type="text/javascript"></script> 
+       
+    </head>
+    <body>
+        <div id = "showTree" style="text-align: center">Show Tree    
+            </div>
+        <div id = "preOrderTraversal" style="text-align: center"><b>PreOrder:-</b>  </div>
+        <div id = "inOrderTraversal" style="text-align: center"><b>InOrder:- </b> </div>
+        <div id = "postOrderTraversal" style="text-align: center"><b>Post Order:- </b> </div>
+            <script>
+                    var bst = new BinarySearchTree();
+                    bst.insert(70);
+                    bst.insert(91);
+                    bst.insert(50);
+                    bst.insert(54);
+                    bst.insert(12);
+                    bst.insert(10);
+                    bst.insert(11);
+                    bst.showTree();
+                    bst.preOrder();
+                    bst.inOrder();
+                    bst.postOrder();
+                    </script>
+        <div style="text-align: center">
+            <div>70</div></br>
+            <div>/&nbsp;&nbsp;&nbsp;&nbsp; \</div></br>
+            <div>50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 91</div></br>
+            <div>/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div></br>
+            <div>12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;54&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+            <div>/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+            <div>10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+    </body>
