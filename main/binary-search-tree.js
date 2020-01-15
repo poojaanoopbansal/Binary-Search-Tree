@@ -5,14 +5,14 @@ class BinarySearchTree
     elementInOrderTraverse = document.getElementById("inOrderTraversal");
     elementPostOrderTraverse = document.getElementById("postOrderTraversal");
     constructor() 
-    { 
+    {
         // root of a binary seach tree 
         this.root = null; 
     } 
   
     insert(data) {
         var newNode = new BinaryNode(data); 
-        if(this.root === null) 
+        if (this.root === null) 
         this.root = newNode; 
          else
         this.insertNode(this.root, newNode); 
